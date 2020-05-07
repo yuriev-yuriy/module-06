@@ -40,9 +40,10 @@ a {
   margin: 0 auto;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 logo {
@@ -72,10 +73,6 @@ logo {
 .nav-menu a {
   color: var(--main-color);
   transition: color 0.2s linear;
-}
-
-.nav-menu li:nth-child(1) a {
-  color: #fce38a;
 }
 
 .nav-menu li:not(:last-child) {
@@ -264,11 +261,9 @@ p.team-title-description {
 }
 
 .overlay {
-  background-image: linear-gradient(
-    90deg,
-    rgba(252, 227, 138, 0.9),
-    rgba(243, 129, 129, 0.9)
-  );
+  background-image: linear-gradient(90deg,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9));
   height: 100%;
   width: 100%;
   position: absolute;
@@ -287,7 +282,10 @@ p.team-title-description {
 
 .team-image {
   transition: transform 0.2s linear;
+  width: 380px;
+  height: auto;
 }
+
 .team-overlay:hover .team-image {
   transform: translate(-10px, -10px);
 }
@@ -410,7 +408,6 @@ div.footer-content {
 }
 
 .contact-form__input::placeholder {
-  text-transform: uppercase;
   font-family: var(--main-font);
   font-size: 15px;
   line-height: 24px;
