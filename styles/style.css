@@ -46,7 +46,7 @@ header {
   align-items: center;
 }
 
-logo {
+header>a {
   font-family: var(--second-font);
   font-size: 30px;
   font-weight: 700;
