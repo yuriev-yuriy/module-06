@@ -46,7 +46,7 @@ header {
   align-items: center;
 }
 
-header>a {
+header > a {
   font-family: var(--second-font);
   font-size: 30px;
   font-weight: 700;
@@ -184,6 +184,7 @@ li.services-list-item {
   position: absolute;
   top: 2px;
   left: 24px;
+  background-repeat: no-repeat;
 }
 
 .icon-01 {
@@ -261,9 +262,11 @@ p.team-title-description {
 }
 
 .overlay {
-  background-image: linear-gradient(90deg,
-      rgba(252, 227, 138, 0.9),
-      rgba(243, 129, 129, 0.9));
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
   height: 100%;
   width: 100%;
   position: absolute;
